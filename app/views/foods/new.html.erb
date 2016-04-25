@@ -1,0 +1,18 @@
+<h1>Add new Food item</h1>
+
+<div class="waiter-page">
+<div class="form">
+<%= form_for @food do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Orders", new_table_order_path(@table), method: :get %>
+</div>
+</div>

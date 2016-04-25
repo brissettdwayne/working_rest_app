@@ -1,0 +1,15 @@
+<h1>Add new Customer</h1>
+
+<div class="waiter-page">
+<div class="form">
+<%= form_for @customer do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= button_to "Orders", new_table_order_path(@table), method: :get %>
+</div>
+</div>

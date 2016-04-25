@@ -1,0 +1,18 @@
+<h1>Assign Tables</h1>
+
+<div class="waiter-page">
+<div class="form">
+<%= form_tag "/assign_table" do %>
+
+  <%= label_tag "Table #" %>
+  <%= select_tag( :table_num, options_for_select( @tables.map{ |table| [table.table_num ]}) ) %>
+
+  <%= submit_tag "Assign Table" %>
+
+<% end %>
+
+<br>
+
+<%= button_to "Create New Table", new_table_path(@table), method: :get %>
+</div>
+</div>

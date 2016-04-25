@@ -1,0 +1,24 @@
+<h1>Create new Order</h1>
+
+<div class="waiter-page">
+<div class="form">
+<%= form_for @order, url: table_orders_path do |f| %>
+
+  <%= f.label :customer_id %>
+  <%= f.select( :customer_id, options_for_select(@customers.map {|customer| [customer.name, customer.id ]}) ) %>
+
+  <br>
+
+  <%= f.label :food_id %>
+  <%= f.select( :food_id, options_for_select( @foods.map{ |food| [food.name, food.id ]}) ) %>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
+
+<%= button_to "Add Customer", new_customer_path, method: :get %>
+<%= button_to "Add Food", new_food_path, method: :get %>
+
+</div>
+</div>

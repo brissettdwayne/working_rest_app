@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?crop=entropy&fit=crop&fm=jpg&h=625&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
+  background-size: cover;
+  font-family: 'Questrial', sans-serif;
+  color: floralwhite;
+  background-repeat: no-repeat;
+}
+
+
+#password {
+  margin-left: .7%;
+}
+
+.log-in, _sign-up {
+  margin: 1%;
+}
+
+.main-page {
+  background-color: lightblue;
+  margin: auto 27em;
+  padding: 7em;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+.sign-up {
+  background-color: lightblue;
+  margin: auto 27em;
+  padding: 7em;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+.waiter-button {
+  margin-top: 1em;
+}
+
+.waiter-page {
+  background-color: lightblue;
+  margin: auto 27em;
+  border: 1px solid black;
+  border-radius: 2%;
+  margin-top: 1em;
+  padding-bottom: 3em;
+}
+
+div.form {
+  padding: .3em;
+}
+
+.main-page > p {
+  font-size: 20px;
+}
+
+.form {
+  padding: 1%;
+}
+
+#new_order {
+  padding: 1em;
+}
+
+#new_waiter{
+  padding: 2em;
+}

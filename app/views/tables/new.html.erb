@@ -1,0 +1,12 @@
+<h1>Add new Table</h1>
+<div class="waiter-page">
+<div class="form">
+<%= form_for @table do |f| %>
+
+  <%= f.label "Table #" %>
+  <%= f.text_field :table_num %>
+
+  <%= f.submit %>
+<% end %>
+</div>
+</div>

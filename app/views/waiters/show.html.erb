@@ -1,0 +1,16 @@
+<h1>Welcome Back <%= @waiter.username %></h1>
+
+<%= button_to "Log Out", sessions_delete_path, method: :delete%>
+<div class="waiter-page">
+<div class="form">
+<h2>Here Are Your Assigned Tables</h2>
+<% @waiter.tables.each do |table| %>
+
+  <h4><%= link_to(table.table_num, table_orders_path(table.id) ) %></h4>
+
+
+<% end %>
+
+<%= button_to "Assign Table", tables_path, method: :get %>
+</div>
+</div>
